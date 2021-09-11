@@ -2,6 +2,7 @@ package pertemuan2.tugas;
 
 public class Member extends VideoGame{
     public int idMember;
+    public int lamaPinjam;
     public String namaMember;
     public String alamat;
     
@@ -12,11 +13,9 @@ public class Member extends VideoGame{
         System.out.println("Nama Alamat : "+alamat);
     }
     
-    public void meminjam(int idM, String nmM, String nmG, int hargaGame){
-        idM = idM;
-        nmM = nmM;
-        super.namaGame = nmG;
-        super.harga = hargaGame;
+    public int bayar(){
+        int totalBayar = super.harga * lamaPinjam;
+        return totalBayar;
     }
     
     public void tampilPeminjaman(){
@@ -25,9 +24,6 @@ public class Member extends VideoGame{
         System.out.println("Nama Member : "+namaMember);
         System.out.println("Nama Game   : "+super.namaGame);
         System.out.println("Harga Game  : "+super.harga);  
-    }
-    
-    public int bayar(){
-        return super.harga;
+        System.out.println("Lama Pinjam : "+lamaPinjam+" hari");  
     }
 }
