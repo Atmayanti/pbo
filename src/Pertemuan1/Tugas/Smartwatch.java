@@ -1,4 +1,4 @@
-package Pertemuan1.Tugas;
+package pertemuan1.Tugas;
 
 public class Smartwatch {
      private String merek;

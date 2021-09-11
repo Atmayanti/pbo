@@ -1,4 +1,4 @@
-package Pertemuan1;
+package pertemuan1;
 
 public class SepedaDemo {
 

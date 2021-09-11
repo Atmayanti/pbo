@@ -1,4 +1,4 @@
-package Pertemuan1.Tugas;
+package pertemuan1.Tugas;
 
 public class MouseDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Pertemuan1.Tugas;
+package pertemuan1.Tugas;
 
 public class MouseWireless extends Mouse{
     private String koneksi;
