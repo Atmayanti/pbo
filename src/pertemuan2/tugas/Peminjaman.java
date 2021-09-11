@@ -10,9 +10,9 @@ public class Peminjaman{
         m1.idGame=1001;
         m1.namaGame="God of War";
         m1.harga=10000;
+        m1.lamaPinjam=7;
         m1.tampilBiodata();
         m1.tampilDataGame();
-        m1.meminjam(101, "Budi", "God of War", 10000);
         m1.tampilPeminjaman();
         System.out.println("=============Pembayaran==============");
         System.out.println("Harga yang harus dibayar : Rp"+m1.bayar()+",-");
