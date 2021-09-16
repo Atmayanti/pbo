@@ -34,7 +34,7 @@ public class Anggota {
     }
     
     public void angsur(int nominal){
-        if (nominal > (jumlahPinjaman/10)) {
+        if (nominal >= (jumlahPinjaman/10)) {
             jumlahPinjaman -= nominal;
         } else {
             System.out.println("Maaf, angsuran harus 10% dari jumlah pinjaman");
