@@ -17,10 +17,10 @@ public class EncapDemo {
     }
     
     public void setAge(int newAge){
-        if (newAge > 30) {
-            age = 30;
-        } else {
+        if (newAge <= 30 && newAge >= 18) {
             age = newAge;
+        } else {
+            System.out.println("Umur yang dimasukkan tidak valid");
         }
     }
 }
