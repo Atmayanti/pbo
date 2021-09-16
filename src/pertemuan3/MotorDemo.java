@@ -3,19 +3,18 @@ package pertemuan3;
 public class MotorDemo {
     public static void main(String[] args) {
         Motor motor = new Motor();
-        motor.printStatus();
-        motor.tambahKecepatan();
         
         motor.nyalakanMesin();
-        motor.printStatus();
-        
         motor.tambahKecepatan();
         motor.printStatus();
         
-        motor.tambahKecepatan();
+        // manambah kecepatan hingga 100
+        for (int i = 0; i < 20; i++) {
+            motor.tambahKecepatan();
+        }
         motor.printStatus();
         
-        motor.tambahKecepatan();
+        motor.kurangiKecepatan();
         motor.printStatus();
         
         motor.matikanMesin();

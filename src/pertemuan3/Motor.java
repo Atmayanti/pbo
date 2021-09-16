@@ -2,6 +2,7 @@ package pertemuan3;
 
 public class Motor {
     private int kecepatan = 0;
+    private int maksKecepatan = 100;
     private boolean kontakOn = false;
     
     public void nyalakanMesin(){
@@ -15,7 +16,11 @@ public class Motor {
     
     public void tambahKecepatan(){
         if (kontakOn == true) {
-            kecepatan += 5;
+            if (kecepatan >= maksKecepatan) {
+                System.out.println("Kecepatan sudah mencapai batas maksimal");
+            } else {
+                kecepatan += 5;
+            }
         } else {
             System.out.println("Kecepatan tidak bisa bertambah karena Mesin Off! \n");
         }
