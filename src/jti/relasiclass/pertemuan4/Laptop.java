@@ -12,7 +12,7 @@ public class Laptop {
         this.proc = proc;
     }
     
-    public void setMerk(String Merk){
+    public void setMerk(String merk){
         this.merk = merk;
     }
     
