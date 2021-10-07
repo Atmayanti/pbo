@@ -9,3 +9,4 @@ public class ClassA {
         System.out.println("nilai x:"+y);
     }
 }
+
