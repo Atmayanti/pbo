@@ -1,5 +1,5 @@
 package pertemuan6.percobaan2;
-public class ClassB {
+public class ClassB extends ClassA{
     private int z;
 
     public void setZ(int z) {
@@ -11,6 +11,6 @@ public class ClassB {
     }
     
     public void getJumlah(){
-        System.out.println("junlah:"+ (x+y+z));
+        System.out.println("jumlah:"+ (super.getX()+super.getY()+z));
     }
 }

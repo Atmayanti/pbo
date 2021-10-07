@@ -7,7 +7,7 @@ public class Percobaan2 {
         hitung.setY(30);
         hitung.setZ(5);
         hitung.getNilai();
-        hitung.getNilaZ();
+        hitung.getNilaiZ();
         hitung.getJumlah();
     }
 }
