@@ -20,10 +20,4 @@ public class Komputer {
         System.out.println("Size Memory\t\t: "+sizeMemory);
         System.out.println("Jenis Processor\t\t: "+jnsProsesor);
     }
-    
-    public static void main(String[] args) {
-        Komputer k = new Komputer();
-        k.tampilData();
-    }
-    
 }

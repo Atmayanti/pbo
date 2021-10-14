@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pertemuan7.tugas;
 
-/**
- *
- * @author ATMAYANTI
- */
-public class Windows {
+public class Windows extends Leptop{
+    public String fitur;
+
+    public Windows() {
+    }
+
+    public Windows(String fitur, String jnsBatrei, String merk, String jnsProsesor, int kecProsesor, int sizeMemory) {
+        super(jnsBatrei, merk, jnsProsesor, kecProsesor, sizeMemory);
+        this.fitur = fitur;
+    }
     
+    public void tampilWindows(){
+        super.tampilLeptop();
+        System.out.println("Fitur\t\t\t: "+fitur);
+    }
 }

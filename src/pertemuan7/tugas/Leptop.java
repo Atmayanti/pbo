@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pertemuan7.tugas;
 
-/**
- *
- * @author ATMAYANTI
- */
-public class Leptop {
+public class Leptop extends Komputer{
+    public String jnsBatrei;
+
+    public Leptop() {
+    }
+
+    public Leptop(String jnsBatrei, String merk, String jnsProsesor, int kecProsesor, int sizeMemory) {
+        super(merk, jnsProsesor, kecProsesor, sizeMemory);
+        this.jnsBatrei = jnsBatrei;
+    }
     
+    public void tampilLeptop(){
+        super.tampilData();
+        System.out.println("Jenis Baterai\t\t: "+jnsBatrei);
+    }
 }
