@@ -1,4 +1,6 @@
-package pertemuan7.praktikum1;
+package pertemuan7.praktikum2;
+
+import pertemuan7.praktikum1.*;
 
 public class Manager extends Karyawan {
     public int tunjangan;
