@@ -1,4 +1,4 @@
-package pertemuan7.praktikum1;
+package pertemuan7.percobaan2;
 
 public class Manager extends Karyawan {
     public int tunjangan;

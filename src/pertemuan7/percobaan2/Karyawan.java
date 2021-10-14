@@ -1,6 +1,4 @@
-package pertemuan7.praktikum2;
-
-import pertemuan7.praktikum1.*;
+package pertemuan7.percobaan2;
 
 public class Karyawan {
     public String nama, alamat, jk;

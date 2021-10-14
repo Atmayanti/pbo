@@ -1,4 +1,4 @@
-package pertemuan7.praktikum1;
+package pertemuan7.percobaan2;
 
 public class Inheritance1 {
     public static void main(String[] args) {
