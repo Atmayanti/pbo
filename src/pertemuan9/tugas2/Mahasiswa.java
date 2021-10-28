@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pertemuan9.tugas2;
 
-/**
- *
- * @author ATMAYANTI
- */
-public class Mahasiswa {
-    
+public class Mahasiswa extends Manusia{
+    public void makan(){
+        System.out.println("Mahasiswa bisa makan");
+    }
+    public void tidur(){
+        System.out.println("Mahasiswa bisa tidur");
+    }
 }
+
