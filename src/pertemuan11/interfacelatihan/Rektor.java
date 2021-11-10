@@ -1,10 +1,9 @@
 package pertemuan11.interfacelatihan;
 public class Rektor{
-    public void beriSertifikatCumlaude(ICumlaude mahasiswa, Mahasiswa mahasiswa1){
+    public void beriSertifikatCumlaude(ICumlaude mahasiswa){
         System.out.println("Saya REKTOR, memberikan sertifikat cumlaude");
         System.out.println("Selamat! silahkan perkenalkan diri anda..");
         
-        mahasiswa1.kuliahDiKampus();
         mahasiswa.lulus();
         mahasiswa.meraihIPKTinggi();
         

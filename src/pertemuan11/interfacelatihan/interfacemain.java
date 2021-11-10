@@ -14,8 +14,8 @@ public class interfacemain {
         PascaSarjana masterCumlaude = new PascaSarjana("Elok");
         
         //pakrektor.beriSertifikatCumlaude(mhsBiasa);
-        pakrektor.beriSertifikatCumlaude(sarjanaCumlaude, sarjanaCumlaude);
-        pakrektor.beriSertifikatCumlaude(masterCumlaude, masterCumlaude);
+        pakrektor.beriSertifikatCumlaude(sarjanaCumlaude);
+        pakrektor.beriSertifikatCumlaude(masterCumlaude);
 
     }
 }
