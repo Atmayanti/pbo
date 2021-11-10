@@ -7,6 +7,7 @@ public class MultipleInterfaceMain {
         Sarjana sarjanaCum = new Sarjana("Dini");
         PascaSarjana masterCum = new PascaSarjana("Elok");
 
+        //pakRektor.beriSertifikatMawapres(sarjanaCum);
         pakRektor.beriSertifikatMawapres(masterCum);
     }
 }

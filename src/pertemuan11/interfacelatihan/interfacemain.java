@@ -1,6 +1,5 @@
 package pertemuan11.interfacelatihan;
 
-import pertemuan11.interfacelatihan.ICumlaude;
 import pertemuan11.interfacelatihan.Mahasiswa;
 import pertemuan11.interfacelatihan.PascaSarjana;
 import pertemuan11.interfacelatihan.Rektor;
@@ -15,7 +14,8 @@ public class interfacemain {
         PascaSarjana masterCumlaude = new PascaSarjana("Elok");
         
         //pakrektor.beriSertifikatCumlaude(mhsBiasa);
-        pakrektor.beriSertifikatCumlaude(sarjanaCumlaude);
-        pakrektor.beriSertifikatCumlaude(masterCumlaude);
+        pakrektor.beriSertifikatCumlaude(sarjanaCumlaude, sarjanaCumlaude);
+        pakrektor.beriSertifikatCumlaude(masterCumlaude, masterCumlaude);
+
     }
 }
