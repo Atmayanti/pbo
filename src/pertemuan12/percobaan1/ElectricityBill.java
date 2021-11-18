@@ -26,7 +26,7 @@ public class ElectricityBill implements Payable{
 
     @Override
     public int getPaymentAmount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return kwh*getBasePrice();
     }
     
     public int getBasePrice(){
