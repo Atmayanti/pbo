@@ -1,19 +1,18 @@
 package backend;
-import com.sun.source.tree.BreakTree;
 
 import java.util.ArrayList;
 import java.sql.*;
 public class Kategori {
-    private int idkategori;
+    private int idKategori;
     private String nama;
     private String keterangan;
 
-    public int getIdkategori() {
-        return idkategori;
+    public int getIdKategori() {
+        return idKategori;
     }
 
-    public void setIdkategori(int idkategori) {
-        this.idkategori = idkategori;
+    public void setIdKategori(int idKategori) {
+        this.idKategori = idKategori;
     }
 
     public String getNama() {
@@ -47,7 +46,7 @@ public class Kategori {
         try {
             while (rs.next()) {
                 kat = new Kategori();
-                kat.setIdkategori(rs.getInt("idkategori"));
+                kat.setIdKategori(rs.getInt("idkategori"));
                 kat.setNama(rs.getString("nama"));
                 kat.setKeterangan(rs.getString("keterangan"));
             }
@@ -66,7 +65,7 @@ public class Kategori {
         try {
             while (rs.next()) {
                 Kategori kat = new Kategori();
-                kat.setIdkategori(rs.getInt("idkategori"));
+                kat.setIdKategori(rs.getInt("idkategori"));
                 kat.setNama(rs.getString("nama"));
                 kat.setKeterangan(rs.getString("keterangan"));
 
@@ -88,7 +87,7 @@ public class Kategori {
         try {
             while (rs.next()) {
                 Kategori kat = new Kategori();
-                kat.setIdkategori(rs.getInt("idkategori"));
+                kat.setIdKategori(rs.getInt("idkategori"));
                 kat.setNama(rs.getString("nama"));
                 kat.setKeterangan(rs.getString("keterangan"));
 
@@ -102,18 +101,18 @@ public class Kategori {
     }
 
     public void save() {
-        if(getById(idkategori).getIdkategori() == 0){
+        if(getById(idKategori).getIdKategori() == 0){
             String SQL = "INSERT INTO kategori (nama, keterangan) VALUES('" + this.nama + "', '" + this.keterangan + "')";
-            this.idkategori = DBHelper.insertQueryGetId(SQL);
+            this.idKategori = DBHelper.insertQueryGetId(SQL);
         }
         else {
-            String SQL = "UPDATE kategori SET nama = '" + this.nama + "', keterangan = '" + this.keterangan + "' WHERE idkategori = '" + this.idkategori + "'";
+            String SQL = "UPDATE kategori SET nama = '" + this.nama + "', keterangan = '" + this.keterangan + "' WHERE idkategori = '" + this.idKategori + "'";
             DBHelper.executeQuery(SQL);
         }
     }
 
     public void delete() {
-        String SQL = "DELETE FROM kategori WHERE idkategori = '" + this.idkategori + "'";
+        String SQL = "DELETE FROM kategori WHERE idkategori = '" + this.idKategori + "'";
         DBHelper.executeQuery(SQL);
     }
 
